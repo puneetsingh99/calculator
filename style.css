@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+:root{
+    --calculator-clr: #152238;
+    --key-clr: #3E5885;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+   background-color: var(--calculator-clr);
+    display: grid;
+}
+
+.calculator{
+    width: 25%;
+    background-color: var(--calculator-clr);
+    display: grid;
+    padding: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1.5rem;
+    margin: auto;
+}
+
+.calculator__key{
+    background-color: var(--key-clr);
+    color: white;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator__key:hover{
+    cursor: pointer;
+    background-color: #244785;
+    
+}
+
+.calculator__output{
+    grid-column: 1/5;
+    color: white;
+    background-color: var(--key-clr);
+    height: 7rem;
+}
+
+.calculator__output, .calculator__key{
+    border-radius: 20px;
+}
+.key__equal{
+    background-color: goldenrod
+}
